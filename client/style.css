@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    font-size: 14px;
+}
+body{
+   
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #040c18;
+}
+.main{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.input{
+    padding-left: 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: #121F33;
+    width: 80%;
+    height: 45px;
+    border: none;
+    outline: none;
+}
+
+.input-container{
+
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 90%;
+    height: 45px;
+    background-color: #121F33;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.button{
+    border-radius: 15px;
+    padding-right: 10px;
+    font-size: 22px;
+    border: none;
+    background-color: inherit;
+    color: linear-gradient(89.97deg,#ae67fa 1.84%,#f49867 102.67%);
+}
+.message--sent{
+    align-self: flex-end;
+    margin-top: 15px;
+    background-color: #0B93F6;
+    /* max-width: max-content; */
+    width: fit-content;
+    padding: 7px 25px;
+    border-radius: 15px;
+}
+#chat-log{
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.message--received{
+
+    margin-top: 15px;
+    background-color: #121F33;
+    /* max-width: max-content; */
+    width: fit-content;
+    padding: 7px 25px;
+    border-radius: 15px;
+}
+@media screen and (max-width: 800px) {
+    body{
+        font-size: 11px;
+    }
+}

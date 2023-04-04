@@ -8,9 +8,12 @@
 }
 body{
    
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: #040c18;
+}
+header img{
+    padding-top: 15px;
 }
 .main{
     width: 100%;

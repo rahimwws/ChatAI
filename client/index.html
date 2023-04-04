@@ -33,7 +33,7 @@
       const chatLog = document.getElementById("chat-log");
       const message = document.getElementById("message");
       const form = document.querySelector("form");
-      form.addEventListener("submit", (e) => {
+      form.addEventListener("submit", async (e) => {
         e.preventDefault();
         const messageText = message.value;
 
@@ -47,7 +47,7 @@
 			`;
         chatLog.appendChild(messageElement);
         chatLog.scrollTop = chatLog.scrollHeight;
-        fetch("https://chatai-mjnd.onrender.com/", {
+        await fetch("http://localhost:8000/", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -62,7 +62,7 @@
             messageElement.classList.add("message");
             messageElement.classList.add("message--received");
             messageElement.innerHTML = `
-					<div class="message__text">${data.ai.content}</div>
+					<div class="message__text">${data.information.content}</div>
 				`;
             chatLog.appendChild(messageElement);
             chatLog.scrollTop = chatLog.scrollHeight;

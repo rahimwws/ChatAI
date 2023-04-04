@@ -5,7 +5,7 @@ import cors from "cors";
 
 const configuration = new Configuration({
   organization: "org-uhp3by1J9MPnkHVH8MxRRoTR",
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 const app = express();
@@ -25,7 +25,7 @@ app.post("/", async (req, res) => {
     ],
   });
   res.json({
-     ai : completion.data.choices[0].message
+    information : completion.data.choices[0].message
   });
   console.log(completion.data.choices[0].message);
 });

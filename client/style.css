@@ -16,6 +16,7 @@ button {
 }
 
 body {
+padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
   background-color: #2b2d33;
@@ -97,7 +98,7 @@ header img {
   body {
     font-size: 11px;
   }
-  #main {
-    height: 80%;
+  .main {
+    height: 90vh;
   }
 }

@@ -1,104 +1,94 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Manrope", sans-serif;
-  font-size: 14px;
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    color:white;
+    font-size: 14px;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+body{
+   background-color: #030C1A;
+    padding-left: 10px;
+    padding-right: 10px;
+    
 }
-button {
-  border: none;
-  background-color: inherit;
+header img{
+    width: 25px;
+    padding-top: 15px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
-body {
-padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: #2b2d33;
+.input{
+    padding-left: 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: #121F33;
+    width: 80%;
+    height: 25px;
+    border: none;
+    outline: none;
 }
 
-header img {
-  padding-top: 15px;
-}
-.main {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
+.input-container{
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 90%;
+    height: 45px;
+    background-color: #121F33;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-.input {
-  padding-left: 10px;
-  border-radius: 15px;
-  color: #ffffff;
-  background-color: #2b2d33;
-  width: 80%;
-  height: 45px;
-  border: none;
-  outline: none;
 }
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding-right: 10px;
+    font-size: 22px;
+    border: none;
+    background-color: inherit;
+}
+.message--sent{
+    align-self: flex-end;
+    margin-top: 15px;
+    background-color: #0E59C7;
+    /* max-width: max-content; */
+    width: fit-content;
+    padding: 8px 20px 8px 10px;
+    border-radius: 15px;
+    text-align: start;
+}
+#chat-log{
+    width: 90%;
 
-.input-container {
-  border-radius: 15px;
-  margin-top: 20px;
-  width: 90%;
-  height: 45px;
-  background-color: #2b2d33;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: #fee600 solid 3px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
 }
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15px;
-  padding-right: 10px;
-  font-size: 22px;
-  border: none;
-  background-color: inherit;
-}
-.message--sent {
-  align-self: flex-end;
-  margin-top: 15px;
-  background-color: #fee600;
-  /* max-width: max-content; */
-  width: fit-content;
-  padding: 8px 20px 8px 10px;
-  border-radius: 15px;
-  text-align: start;
-}
-#chat-log {
-  width: 90%;
+.message--received{
 
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-}
-.message--received {
-  margin-top: 15px;
-    color: white
-    ;
-  background-color: rgba(43, 45, 51, 1);
-  /* max-width: max-content; */
-  width: fit-content;
-  padding: 7px 25px;
-  border-radius: 15px;
-  border: #fee600 solid 2px;
+    margin-top: 15px;
+    background-color: #121F33;
+    /* max-width: max-content; */
+    width: fit-content;
+    padding: 7px 25px;
+    border-radius: 15px;
 }
 @media screen and (max-width: 800px) {
-  body {
-    font-size: 11px;
-  }
-  .main {
-    height: 85vh;
-  }
+    body{
+        font-size: 11px;
+    }
+    .main{
+        height: 90vh;
+    }
 }

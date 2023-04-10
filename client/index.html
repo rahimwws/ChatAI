@@ -2,23 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="website icon" href="./assets/logoChatAi.png " type="jpg" />
-    <title>ChatAI</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" defer></script>
+    <title>Искусственный интеллект</title>
+  
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js" defer></script>
   </head>
-  <body >
-   
-    <main class="main">
-      <div id="chat-log"></div>
-      <form action="" class="input-container">
-        <textarea name="message" rows="1" cols="1" placeholder="Напиши что-нибудь..." class="input"></textarea>
-        <button type="submit" class="button"><img src="./assets/send.png" alt="" width="25px"></button>
-      </form>
-    </main>
+  <body>
 
-    
+      <main class="main">
+        <div id="chat-log"></div>
+        <form action="" class="input-container">
+          <textarea type="text" name="message" id="message" class="input" rows="1" cols="1" placeholder="Send a message.."></textarea>
+          <button type="submit" class="button"><img src='./assets/send.png' alt="" width="25px"/></button>
+        </form>
+      </main>
+
+
+
   </body>
 </html>

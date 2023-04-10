@@ -1,4 +1,4 @@
-"use strict";
+
 const textarea = document.querySelector(".input");
 
 textarea.addEventListener("input", () => {

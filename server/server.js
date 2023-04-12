@@ -27,7 +27,7 @@ app.post("/", async (req, res) => {
   res.json({
     information : completion.data.choices[0].message
   });
-  console.log(completion.data.choices[0].message);
+
 });
 
 app.listen(port,()=>{

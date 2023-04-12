@@ -25,7 +25,7 @@ form.addEventListener("submit", async (e) => {
 			`;
   chatLog.appendChild(messageElement);
   chatLog.scrollTop = chatLog.scrollHeight;
-  await fetch("https://chatai-28rm.onrender.com/", {
+  await fetch("https://chatai-2-0.onrender.com/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
